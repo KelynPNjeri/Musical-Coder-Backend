@@ -1,6 +1,8 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+)
 
 
 func main()  {
@@ -10,6 +12,8 @@ func main()  {
 			"message": "pong",
 		})
 	})
+	//r.GET("/blogs")
+	//r.GET("/")
 	r.Run()
 }
 

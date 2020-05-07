@@ -1,1 +1,11 @@
+dist: bionic
+
 language: go
+go: 1.14.2
+
+install: true
+before_script:
+  - curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $GOPATH/bin v1.25.1
+
+script:
+  - golangci-lint run
